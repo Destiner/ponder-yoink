@@ -5,6 +5,7 @@ ponder.on("Yoink:Yoinked", async ({ event, context }) => {
     id: event.args.yoinker,
     data: {
       yoinker: event.args.yoinker,
+      txNonce: event.transaction.nonce,
     },
   });
 });
